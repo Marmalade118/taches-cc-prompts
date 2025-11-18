@@ -36,15 +36,21 @@ Commands install globally to `~/.claude/commands/`. Skills install to `~/.claude
 
 ### Meta-Prompting
 
+Separate analysis from execution. Describe what you want in natural language, Claude generates a rigorous prompt, then runs it in a fresh sub-agent context.
+
 - [`/create-prompt`](./commands/create-prompt.md) - Generate optimized prompts with XML structure
 - [`/run-prompt`](./commands/run-prompt.md) - Execute saved prompts in sub-agent contexts
 
 ### Todo Management
 
+Capture ideas mid-conversation without derailing current work. Resume later with full context intact.
+
 - [`/add-to-todos`](./commands/add-to-todos.md) - Capture tasks with full context
 - [`/check-todos`](./commands/check-todos.md) - Resume work on captured tasks
 
 ### Context Handoff
+
+Create structured handoff documents to continue work in a fresh context. Reference with `@whats-next.md` to resume seamlessly.
 
 - [`/whats-next`](./commands/whats-next.md) - Create handoff document for fresh context
 
@@ -94,19 +100,19 @@ Commands: `/create-meta-prompt`
 
 ### [Create Slash Commands](./skills/create-slash-commands/)
 
-Expert guidance for creating Claude Code slash commands. Covers YAML frontmatter, XML structure, dynamic context loading, and argument handling.
+Build commands that expand into full prompts when invoked. Describe the command you want, get proper YAML configuration with arguments, tool restrictions, and dynamic context loading.
 
 Commands: `/create-slash-command`, `/audit-slash-command`
 
 ### [Create Subagents](./skills/create-subagents/)
 
-Expert guidance for creating specialized Claude instances that run in isolated contexts. Covers system prompt design, tool access configuration, and multi-agent orchestration with the Task tool.
+Build specialized Claude instances that run in isolated contexts. Describe the agent's purpose, get optimized system prompts with the right tool access and orchestration patterns.
 
 Commands: `/create-subagent`, `/audit-subagent`
 
 ### [Create Hooks](./skills/create-hooks/)
 
-Expert guidance for creating event-driven automation in Claude Code. Covers PreToolUse, PostToolUse, Stop, SessionStart, and other hook types.
+Build event-driven automation that triggers on tool calls, session events, or prompt submissions. Describe what you want to automate, get working hook configurations.
 
 Commands: `/create-hook`
 
